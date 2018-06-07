@@ -10,24 +10,22 @@ import Foundation
 
 class NetworkingController {
     
-    func parseJSON() {
+    func getJSON() {
         let url = URL(string: "https://api.owncode.ch/ipa-timer")
-        
         let task = URLSession.shared.dataTask(with: url!) {(data, response, error) in
-            
             guard error == nil else {
-                print("returning error")
+                print("Fehler beim laden der Quelle")
                 return
             }
             
             guard let content = data else {
-                print("not returning data")
+                print("Die Quelle leifert keine Daten zurück")
                 return
             }
             
             
             guard let json = (try? JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers)) as? [String: Any] else {
-                print("Not containing JSON")
+                print("Die erhaltenen Daten können nicht angezeigt werden.")
                 return
             }
             
