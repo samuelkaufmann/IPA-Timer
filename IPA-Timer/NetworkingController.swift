@@ -59,7 +59,7 @@ class NetworkingController {
             do {
                 let decoder = JSONDecoder()
                 let ipaKandidat = try decoder.decode(IpaKandidat.self, from: data)
-                print("ipa: \(ipaKandidat.ipa) Experte: \(ipaKandidat.first_expert)")
+                //print("ipa: \(ipaKandidat.ipa) Experte: \(ipaKandidat.first_expert)")
                 completion(ipaKandidat)
             }
             catch {

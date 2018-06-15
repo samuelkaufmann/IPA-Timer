@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    //Outlets
+    
+    
     var kandidat: IpaKandidat?
     
     override func viewDidLoad() {
@@ -19,6 +22,7 @@ class ViewController: UIViewController {
             if let receivedKandidat = kandidat {
                 self.kandidat = receivedKandidat
             }
+            print(kandidat?.first_expert)
         }
     }
     override func didReceiveMemoryWarning() {
