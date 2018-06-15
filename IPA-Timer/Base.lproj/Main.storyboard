@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IPA_Timer" customModuleProvider="target" sceneMemberID="viewController">
@@ -33,11 +33,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="o8S-yv-zhY"/>
+                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="o8S-yv-zhY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+            <point key="canvasLocation" x="937" y="-131"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="flc-AF-XWr">
@@ -51,11 +51,66 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="rRh-V3-ODs"/>
+                        <segue destination="RfP-97-gI1" kind="relationship" relationship="viewControllers" id="5Yh-ZA-WfG"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zdo-6a-3O1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Timer View Controller-->
+        <scene sceneID="hQD-yX-LCh">
+            <objects>
+                <viewController id="RfP-97-gI1" customClass="TimerViewController" customModule="IPA_Timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BZY-FA-A8u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTG-ol-3gy">
+                                <rect key="frame" x="10" y="70" width="355" height="107.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="90"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvP-oG-L5R">
+                                <rect key="frame" x="10" y="520" width="355" height="48"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <state key="normal" title="zurücksetzen">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edn-Is-IxV">
+                                <rect key="frame" x="10" y="462" width="355" height="48"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iTG-ol-3gy" firstAttribute="leading" secondItem="lng-i1-fct" secondAttribute="leading" constant="10" id="2No-bm-4YZ"/>
+                            <constraint firstItem="lng-i1-fct" firstAttribute="trailing" secondItem="yvP-oG-L5R" secondAttribute="trailing" constant="10" id="FO2-so-1Ku"/>
+                            <constraint firstItem="edn-Is-IxV" firstAttribute="leading" secondItem="lng-i1-fct" secondAttribute="leading" constant="10" id="GBQ-rm-7jg"/>
+                            <constraint firstItem="lng-i1-fct" firstAttribute="trailing" secondItem="iTG-ol-3gy" secondAttribute="trailing" id="GqO-7I-sfD"/>
+                            <constraint firstItem="lng-i1-fct" firstAttribute="trailing" secondItem="edn-Is-IxV" secondAttribute="trailing" constant="10" id="I71-cu-GDp"/>
+                            <constraint firstItem="yvP-oG-L5R" firstAttribute="leading" secondItem="lng-i1-fct" secondAttribute="leading" constant="10" id="dYw-5f-BJE"/>
+                            <constraint firstItem="iTG-ol-3gy" firstAttribute="leading" secondItem="lng-i1-fct" secondAttribute="leading" id="deV-bF-xhQ"/>
+                            <constraint firstItem="lng-i1-fct" firstAttribute="trailing" secondItem="iTG-ol-3gy" secondAttribute="trailing" constant="10" id="hfK-dG-PTc"/>
+                            <constraint firstItem="yvP-oG-L5R" firstAttribute="top" secondItem="edn-Is-IxV" secondAttribute="bottom" constant="10" id="uV6-7d-3BJ"/>
+                            <constraint firstItem="iTG-ol-3gy" firstAttribute="top" secondItem="lng-i1-fct" secondAttribute="top" constant="50" id="yZ6-YF-HAo"/>
+                            <constraint firstItem="lng-i1-fct" firstAttribute="bottom" secondItem="yvP-oG-L5R" secondAttribute="bottom" constant="50" id="yiq-DH-aSb"/>
+                            <constraint firstItem="iTG-ol-3gy" firstAttribute="top" secondItem="lng-i1-fct" secondAttribute="top" constant="50" id="ynw-T2-0Yv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lng-i1-fct"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="N3T-Pw-Cj2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N1t-k6-jln" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="937" y="564"/>
         </scene>
     </scenes>
 </document>

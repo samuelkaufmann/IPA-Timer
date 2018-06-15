@@ -15,6 +15,7 @@
 		3A2A06E120C29D2500D23950 /* IPA_TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2A06E020C29D2500D23950 /* IPA_TimerTests.swift */; };
 		3A2A06EC20C29D2600D23950 /* IPA_TimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2A06EB20C29D2600D23950 /* IPA_TimerUITests.swift */; };
 		3A9E957120C98EDE00D78B88 /* NetworkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9E957020C98EDE00D78B88 /* NetworkingController.swift */; };
+		3ABFE9BB20D3DC8700938F9C /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABFE9BA20D3DC8700938F9C /* TimerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3A2A06EB20C29D2600D23950 /* IPA_TimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPA_TimerUITests.swift; sourceTree = "<group>"; };
 		3A2A06ED20C29D2600D23950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A9E957020C98EDE00D78B88 /* NetworkingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingController.swift; sourceTree = "<group>"; };
+		3ABFE9BA20D3DC8700938F9C /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				3A2A06CB20C29D2500D23950 /* AppDelegate.swift */,
 				3A2A06CD20C29D2500D23950 /* ViewController.swift */,
+				3ABFE9BA20D3DC8700938F9C /* TimerViewController.swift */,
 				3A9E957020C98EDE00D78B88 /* NetworkingController.swift */,
 				3A2A06CF20C29D2500D23950 /* Main.storyboard */,
 				3A2A06D220C29D2500D23950 /* Assets.xcassets */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ABFE9BB20D3DC8700938F9C /* TimerViewController.swift in Sources */,
 				3A9E957120C98EDE00D78B88 /* NetworkingController.swift in Sources */,
 				3A2A06CE20C29D2500D23950 /* ViewController.swift in Sources */,
 				3A2A06CC20C29D2500D23950 /* AppDelegate.swift in Sources */,
