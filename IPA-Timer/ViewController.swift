@@ -9,18 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var kandidat: IpaKandidat?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        NetworkingController().get(callback: <#NSData#>)
-        
+        NetworkingController.getIpaKandidat { (kandidat) in
+            if let receivedKandidat = kandidat {
+                self.kandidat = receivedKandidat
+            }
+        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
-
