@@ -34,7 +34,8 @@ struct expert: Codable {
 class NetworkingController {
     
     static func getIpaKandidat(completion: @escaping (IpaKandidat?) -> ()) {
-        let url = URL(string: "https://api.owncode.ch/ipa-timer")
+        //let url = URL(string: "https://api.owncode.ch/ipa-timer")
+        let url = URL(string: "https://kaufmann.informatics.ch/project/kandidat/k1")
         URLSession.shared.dataTask(with: url!) { data, response, error in
             // please always use only english language in projects even if team is 100% native language speaking
             //Wenn dataTask ein Fehler wirft
