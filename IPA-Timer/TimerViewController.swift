@@ -54,7 +54,7 @@ class TimerViewController: UIViewController {
     @objc func updateTimer() {
         if seconds < 1 {
             timer.invalidate()
-            for _ in 1...5 {
+            for _ in 1...10 {
                 AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
                 sleep(1)
             }
@@ -63,7 +63,7 @@ class TimerViewController: UIViewController {
             timerLabel.text = timeString(time: TimeInterval(seconds))
         }
         if seconds == 900 || seconds == 600 || seconds == 300 {
-            
+            AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
         }
     }
     
