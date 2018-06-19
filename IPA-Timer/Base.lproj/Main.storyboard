@@ -67,7 +67,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTG-ol-3gy">
-                                <rect key="frame" x="10" y="70" width="355" height="107.5"/>
+                                <rect key="frame" x="10" y="70" width="375" height="107.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="90"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -97,23 +97,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="iTG-ol-3gy" firstAttribute="leading" secondItem="lng-i1-fct" secondAttribute="leading" constant="10" id="2No-bm-4YZ"/>
                             <constraint firstItem="lng-i1-fct" firstAttribute="trailing" secondItem="yvP-oG-L5R" secondAttribute="trailing" constant="10" id="FO2-so-1Ku"/>
                             <constraint firstItem="edn-Is-IxV" firstAttribute="leading" secondItem="lng-i1-fct" secondAttribute="leading" constant="10" id="GBQ-rm-7jg"/>
-                            <constraint firstItem="lng-i1-fct" firstAttribute="trailing" secondItem="iTG-ol-3gy" secondAttribute="trailing" id="GqO-7I-sfD"/>
                             <constraint firstItem="lng-i1-fct" firstAttribute="trailing" secondItem="edn-Is-IxV" secondAttribute="trailing" constant="10" id="I71-cu-GDp"/>
+                            <constraint firstItem="iTG-ol-3gy" firstAttribute="top" secondItem="lng-i1-fct" secondAttribute="top" constant="50" id="Mnj-y1-Igi"/>
+                            <constraint firstItem="iTG-ol-3gy" firstAttribute="leading" secondItem="lng-i1-fct" secondAttribute="leading" constant="10" id="aGJ-z1-DFI"/>
                             <constraint firstItem="yvP-oG-L5R" firstAttribute="leading" secondItem="lng-i1-fct" secondAttribute="leading" constant="10" id="dYw-5f-BJE"/>
-                            <constraint firstItem="iTG-ol-3gy" firstAttribute="leading" secondItem="lng-i1-fct" secondAttribute="leading" id="deV-bF-xhQ"/>
-                            <constraint firstItem="lng-i1-fct" firstAttribute="trailing" secondItem="iTG-ol-3gy" secondAttribute="trailing" constant="10" id="hfK-dG-PTc"/>
                             <constraint firstItem="yvP-oG-L5R" firstAttribute="top" secondItem="edn-Is-IxV" secondAttribute="bottom" constant="10" id="uV6-7d-3BJ"/>
-                            <constraint firstItem="iTG-ol-3gy" firstAttribute="top" secondItem="lng-i1-fct" secondAttribute="top" constant="50" id="yZ6-YF-HAo"/>
+                            <constraint firstItem="iTG-ol-3gy" firstAttribute="trailing" secondItem="lng-i1-fct" secondAttribute="trailing" constant="10" id="xib-7t-PhR"/>
                             <constraint firstItem="lng-i1-fct" firstAttribute="bottom" secondItem="yvP-oG-L5R" secondAttribute="bottom" constant="50" id="yiq-DH-aSb"/>
-                            <constraint firstItem="iTG-ol-3gy" firstAttribute="top" secondItem="lng-i1-fct" secondAttribute="top" constant="50" id="ynw-T2-0Yv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lng-i1-fct"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="bookmarks" id="N3T-Pw-Cj2"/>
                     <connections>
+                        <outlet property="startStopButton" destination="edn-Is-IxV" id="IqV-PW-Qr2"/>
                         <outlet property="timerLabel" destination="iTG-ol-3gy" id="4Hd-7o-Kly"/>
                     </connections>
                 </viewController>
