@@ -79,6 +79,9 @@
                                 <state key="normal" title="zurücksetzen">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="resetButton:" destination="RfP-97-gI1" eventType="touchUpInside" id="0ig-ox-or9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edn-Is-IxV">
                                 <rect key="frame" x="10" y="462" width="355" height="48"/>
@@ -87,6 +90,9 @@
                                 <state key="normal" title="Start">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="startStopButton:" destination="RfP-97-gI1" eventType="touchUpInside" id="hFR-BX-2Mq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -107,6 +113,9 @@
                         <viewLayoutGuide key="safeArea" id="lng-i1-fct"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="bookmarks" id="N3T-Pw-Cj2"/>
+                    <connections>
+                        <outlet property="timerLabel" destination="iTG-ol-3gy" id="4Hd-7o-Kly"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N1t-k6-jln" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

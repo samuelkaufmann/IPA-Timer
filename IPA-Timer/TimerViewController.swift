@@ -10,6 +10,12 @@ import UIKit
 
 class TimerViewController: UIViewController {
 
+    @IBOutlet weak var timerLabel: UILabel!
+    @IBAction func startStopButton(_ sender: Any) {
+    }
+    @IBAction func resetButton(_ sender: Any) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
