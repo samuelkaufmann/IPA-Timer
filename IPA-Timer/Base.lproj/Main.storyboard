@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Meine IPA-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IPA_Timer" customModuleProvider="target" sceneMemberID="viewController">
@@ -114,7 +114,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="o8S-yv-zhY"/>
+                    <tabBarItem key="tabBarItem" title="Meine IPA" image="folder" id="o8S-yv-zhY"/>
                     <connections>
                         <outlet property="firstExpertLabel" destination="zOw-Q0-TYr" id="Gz5-ba-8B3"/>
                         <outlet property="firstExpertMailLabel" destination="5AG-yh-Rgg" id="RcT-Rs-0FW"/>
@@ -150,7 +150,7 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
-        <!--Timer View Controller-->
+        <!--Timer-->
         <scene sceneID="hQD-yX-LCh">
             <objects>
                 <viewController id="RfP-97-gI1" customClass="TimerViewController" customModule="IPA_Timer" customModuleProvider="target" sceneMemberID="viewController">
@@ -201,7 +201,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lng-i1-fct"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="N3T-Pw-Cj2"/>
+                    <tabBarItem key="tabBarItem" title="Timer" image="timer" id="N3T-Pw-Cj2"/>
                     <connections>
                         <outlet property="startStopButton" destination="edn-Is-IxV" id="IqV-PW-Qr2"/>
                         <outlet property="timerLabel" destination="iTG-ol-3gy" id="4Hd-7o-Kly"/>
@@ -212,4 +212,8 @@
             <point key="canvasLocation" x="1830" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="folder" width="30" height="30"/>
+        <image name="timer" width="30" height="30"/>
+    </resources>
 </document>
