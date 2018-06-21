@@ -22,15 +22,20 @@ class TimerViewController: UIViewController {
     //define outlets and actions
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var startStopButton: UIButton!
+    @IBOutlet weak var resetButton: UIButton!
     @IBAction func startStopButton(_ sender: Any) {
         if isTimerRunnung == false {
             //start timer
             runTimer()
+            resetButton.isEnabled = false
+            resetButton.backgroundColor = UIColor.gray
             startStopButton.setTitle("Pause", for: .normal)
             isTimerRunnung = true
         } else {
             //pause timer
             pauseTimer()
+            resetButton.isEnabled = true
+            resetButton.backgroundColor = UIColor.black
             startStopButton.setTitle("Start", for: .normal)
             isTimerRunnung = false
             resumeTapped = true

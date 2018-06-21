@@ -203,6 +203,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Timer" image="timer" id="N3T-Pw-Cj2"/>
                     <connections>
+                        <outlet property="resetButton" destination="yvP-oG-L5R" id="42b-kA-Yt1"/>
                         <outlet property="startStopButton" destination="edn-Is-IxV" id="IqV-PW-Qr2"/>
                         <outlet property="timerLabel" destination="iTG-ol-3gy" id="4Hd-7o-Kly"/>
                     </connections>
